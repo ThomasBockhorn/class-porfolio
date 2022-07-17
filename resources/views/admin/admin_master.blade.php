@@ -51,10 +51,6 @@
     <!-- Footer -->
     @include('admin.body.footer')
 </div>
-<!-- END layout-wrapper -->
-
-<!--right sidebar -->
-@include('admin.body.rightsider')
 
 <!-- JAVASCRIPT -->
 <script src="{{ asset('backend/assets/libs/jquery/jquery.min.js')}}"></script>
