@@ -6,7 +6,7 @@
                 <div class="col-lg-6">
                     <div class="card"><br><br>
                         <div class="mx-auto">
-                            <img class="rounded-circle avatar-xl" src="{{ asset('backend/assets/images/small/img-5.jpg') }}" alt="Card image cap">
+                            <img class="img-fluid img-thumbnail" src="{{ asset('backend/assets/images/small/img-5.jpg') }}" alt="Card image cap">
                         </div>
 
                         <div class="card-body">
@@ -14,7 +14,7 @@
                             <hr>
                             <h4 class="card-title">User Email : {{ $adminUser->email }} </h4>
                             <hr>
-                            <a href="" class="btn btn-info btn-rounded waves-effect waves-light" > Edit Profile</a>
+                            <a href="{{ route('edit.profile')  }}" class="btn btn-info btn-rounded waves-effect waves-light" > Edit Profile</a>
                         </div>
                     </div>
                 </div>
