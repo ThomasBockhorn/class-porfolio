@@ -26,7 +26,7 @@
                                     </div>
                                 </div>
                                 <div class="mx-auto mb-5">
-                                    <img id="showImage" class="img-fluid img-thumbnail" src="{{ asset('backend/assets/images/small/img-5.jpg') }}" alt="Card image cap">
+                                    <img id="showImage" class="img-fluid img-thumbnail" src="{{ asset('upload/admin_images/' . $adminUser->profile_image) }}" alt="Card image cap">
                                 </div>
                                 <button type="submit" class="btn btn-info btn-rounded waves-effect waves-light" >Submit Edit</button>
                             </form>

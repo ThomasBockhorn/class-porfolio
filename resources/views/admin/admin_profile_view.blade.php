@@ -6,7 +6,7 @@
                 <div class="col-lg-6">
                     <div class="card"><br><br>
                         <div class="mx-auto">
-                            <img class="img-fluid img-thumbnail" src="{{ asset('backend/assets/images/small/img-5.jpg') }}" alt="Card image cap">
+                            <img class="img-fluid img-thumbnail" src="{{ asset('upload/admin_images/' . $adminUser->profile_image) }}" alt="Card image cap">
                         </div>
 
                         <div class="card-body">
