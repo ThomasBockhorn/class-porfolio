@@ -8,7 +8,8 @@
                     <div class="card"><br><br>
                         <h1 class="text-center">Edit Profile</h1>
                         <div class="card-body">
-                            <form action = "">
+                            <form method="post" action="{{ route('store.profile') }}" enctype="multipart/form-data">
+                                @csrf
                                 <div class="form-group mb-3 row">
                                     <div class="col-12">
                                         <input class="form-control" id="name" name="name" type="text" required autofocus placeholder="{{ $adminUser->name  }}">
@@ -21,7 +22,7 @@
                                 </div>
                                 <div class="form-group mb-3 row">
                                     <div class="col-12">
-                                        <input id="image" class="form-control" type="file" required name="email">
+                                        <input id="image" class="form-control" type="file" required name="profile_image">
                                     </div>
                                 </div>
                                 <div class="mx-auto mb-5">
@@ -43,8 +44,8 @@
                     $('#showImage').attr('src', e.target.result);
                 }
                 reader.readAsDataURL(e.target.files['0'])
-            })
-        })
+            });
+        });
     </script>
 
 @endsection
