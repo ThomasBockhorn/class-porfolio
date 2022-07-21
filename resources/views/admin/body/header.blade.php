@@ -49,7 +49,7 @@
                     <img class="rounded-circle header-profile-user" src="{{ (!empty($adminUser->profile_image))?
                                url('upload/admin_images/' . $adminUser->profile_image): url('upload/admin_images/no_image.jpg') }}"
                          alt="Header Avatar">
-                    <span class="d-none d-xl-inline-block ms-1">Julia</span>
+                    <span class="d-none d-xl-inline-block ms-1">{{ $adminUser->name }}</span>
                     <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                 </button>
                 <div class="dropdown-menu dropdown-menu-end">
