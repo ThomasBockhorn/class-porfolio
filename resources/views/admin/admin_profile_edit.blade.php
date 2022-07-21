@@ -12,12 +12,12 @@
                                 @csrf
                                 <div class="form-group mb-3 row">
                                     <div class="col-12">
-                                        <input class="form-control" id="name" name="name" type="text" required autofocus placeholder="{{ $adminUser->name  }}">
+                                        <input class="form-control" id="name" name="name" type="text"  autofocus placeholder="{{ $adminUser->name  }}">
                                     </div>
                                 </div>
                                 <div class="form-group mb-3 row">
                                     <div class="col-12">
-                                        <input id="email" class="form-control" type="email" required name="email" placeholder="{{ $adminUser->email }}">
+                                        <input id="email" class="form-control" type="email" name="email" placeholder="{{ $adminUser->email }}">
                                     </div>
                                 </div>
                                 <div class="form-group mb-3 row">
