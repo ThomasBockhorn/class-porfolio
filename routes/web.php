@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,7 +21,9 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('admin.index');
+    $id = Auth::user()->id;
+    $adminUser = User::findOrFail($id);
+    return view('admin.index', compact('adminUser'));
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 //Admin Controller routes
