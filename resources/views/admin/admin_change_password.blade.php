@@ -7,16 +7,23 @@
                     <div class="card"><br><br>
                         <h1 class="text-center">Change Password</h1>
                         <div class="card-body">
+
+                            @if(count($errors))
+                                @foreach($errors->all() as $error)
+                                    <p class="alert alert-danger alert-dismissible fade show">{{ $error }}</p>
+                                @endforeach
+                            @endif
+
                             <form method="post" action="{{ route('store.password') }}">
                                 @csrf
                                 <div class="form-group mb-3 row">
                                     <div class="col-12">
-                                        <input class="form-control" id="password" name="password" type="password" placeholder="Old Password">
+                                        <input class="form-control" id="oldpassword" name="old_password" type="password" placeholder="Old Password">
                                     </div>
                                 </div>
                                 <div class="form-group mb-3 row">
                                     <div class="col-12">
-                                        <input id="password" class="form-control" type="password" name="password" placeholder="New Password">
+                                        <input id="password" class="form-control" type="password" name="new_password" placeholder="New Password">
                                     </div>
                                 </div>
                                 <div class="form-group mb-3 row">
