@@ -21,8 +21,8 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    $id = Auth::user()->id;
-    $adminUser = User::findOrFail($id);
+    $userId = Auth::id();
+    $adminUser = User::findOrFail($userId);
     return view('admin.index', compact('adminUser'));
 })->middleware(['auth', 'verified'])->name('dashboard');
 
@@ -32,6 +32,9 @@ Route::controller(AdminController::class)->group(function(){
     Route::get('/admin/profile', 'profile')->name('admin.profile');
     Route::get('/edit/profile', 'editProfile')->name('edit.profile');
     Route::post('/store/profile', 'storeProfile')->name('store.profile');
+    Route::get('/change/password', 'changePassword')->name('change.password');
+    Route::post('/store/password', 'storePassword')->name('store.password');
+
 });
 
 require __DIR__.'/auth.php';
