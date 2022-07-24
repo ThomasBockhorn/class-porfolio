@@ -1,10 +1,3 @@
-
-
-
-
-
-
-        <!-- Footer-area -->
         <footer class="footer">
             <div class="container">
                 <div class="row justify-content-between">
@@ -64,7 +57,3 @@
             </div>
         </footer>
         <!-- Footer-area-end -->
-
-
-
-
