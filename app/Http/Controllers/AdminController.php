@@ -138,7 +138,6 @@ class AdminController extends Controller
 
             session()->flash('message', 'Old password does not match');
             return redirect()->back()->with($notification);
-
         }
     }
 }
