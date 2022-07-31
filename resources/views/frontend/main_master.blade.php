@@ -105,7 +105,7 @@
         @include('frontend.body.header')
 
             <div class="main-content">
-                @yield('frontend')
+                @yield('main')
             </div>
 
 

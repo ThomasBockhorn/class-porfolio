@@ -1,8 +1,6 @@
  @extends('frontend.main_master')
-@section('frontend')
+@section('main')
 
-        <!-- main-area -->
-        <main>
 
             <!-- banner-area -->
             <section class="banner">
